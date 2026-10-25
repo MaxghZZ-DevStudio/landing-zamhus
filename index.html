@@ -1,0 +1,1189 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Zamhu's Grill: cortes finos al carbón, anticuchos tradicionales y bar de autor en Lima. Pide por WhatsApp o reserva tu mesa.">
+  <title>Zamhu's Grill | Carnes, Anticuchos y Bar</title>
+
+  <!-- Fuentes: Oswald (títulos) + Inter (texto) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Oswald:wght@500;600;700&display=swap" rel="stylesheet">
+  <!-- Íconos: Material Symbols Outlined -->
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- ========== HEADER ========== -->
+  <header class="header" id="header">
+    <div class="container header__inner">
+      <a class="header__brand" href="#" aria-label="Zamhu's Grill, volver al inicio">
+        <img class="header__logo" src="images/logo.webp" alt="Zamhu's Grill · Carnes · Anticuchos · Bar" width="480" height="282">
+      </a>
+
+      <!-- Menú de escritorio -->
+      <nav class="nav" aria-label="Navegación principal">
+        <a class="nav__link" href="#parrilla" data-nav>Parrilla</a>
+        <a class="nav__link" href="#combos" data-nav>Combos</a>
+        <a class="nav__link" href="#anticuchos" data-nav>Anticuchos</a>
+        <a class="nav__link" href="#carta" data-nav>Carta</a>
+        <a class="nav__link" href="#ubicanos" data-nav>Ubícanos</a>
+      </nav>
+
+      <div class="header__actions">
+        <a class="btn btn--flame header__cta" href="#pedido">Pedir Online</a>
+        <button class="burger" id="burger" type="button" aria-label="Abrir menú" aria-expanded="false" aria-controls="mobile-menu">
+          <span class="icon" aria-hidden="true">menu</span>
+        </button>
+      </div>
+    </div>
+
+    <!-- Menú móvil (hamburguesa) -->
+    <nav class="mobile-menu" id="mobile-menu" aria-label="Navegación móvil">
+      <div class="container mobile-menu__list">
+        <a class="mobile-menu__link" href="#parrilla" data-nav>Parrilla</a>
+        <a class="mobile-menu__link" href="#combos" data-nav>Combos</a>
+        <a class="mobile-menu__link" href="#anticuchos" data-nav>Anticuchos</a>
+        <a class="mobile-menu__link" href="#carta" data-nav>Carta</a>
+        <a class="mobile-menu__link" href="#ubicanos" data-nav>Ubícanos</a>
+      </div>
+    </nav>
+  </header>
+
+  <main class="main">
+    <!-- ========== 1. HERO + MARQUEE ========== -->
+    <section class="hero">
+      <!-- Brillos de brasa de fondo -->
+      <div class="hero__glow hero__glow--top" aria-hidden="true"></div>
+      <div class="hero__glow hero__glow--right" aria-hidden="true"></div>
+
+      <div class="container">
+        <div class="hero__grid">
+          <!-- Columna izquierda: texto y botones -->
+          <div class="hero__content">
+            <div class="hero__badge">
+              <span class="icon icon--base c-flame" aria-hidden="true">local_fire_department</span>
+              <span class="t-stamp">Maestría Criolla &amp; Brasas</span>
+            </div>
+
+            <h1 class="hero__title">
+              Pasión por el Fuego, <span class="hero__title-fire">Maestría en la Brasa</span>
+            </h1>
+
+            <p class="hero__text t-body-lg">
+              Cortes finos seleccionados, anticuchos tradicionales y el inconfundible aroma a leña y carbón de quebracho. Cada término, una obra de arte al rojo vivo.
+            </p>
+
+            <div class="hero__actions">
+              <a class="btn btn--flame hero__btn-main" href="https://wa.me/51987654321?text=Hola%20Zamhu's%20Grill,%20deseo%20hacer%20un%20pedido" target="_blank" rel="noopener noreferrer">
+                <span class="icon icon--lg" aria-hidden="true">restaurant</span>
+                <span>Pedir Ya</span>
+              </a>
+              <a class="btn btn--placa" href="#carta">
+                <span class="icon icon--lg" aria-hidden="true">menu_book</span>
+                <span>Ver Carta Completa</span>
+              </a>
+            </div>
+
+            <ul class="hero__specs">
+              <li class="hero__spec">
+                <span class="hero__spec-value t-headline-sm c-gold">100%</span>
+                <span class="hero__spec-label t-caption">Carbón de Quebracho</span>
+              </li>
+              <li class="hero__spec">
+                <span class="hero__spec-value t-headline-sm c-flame">21 Días</span>
+                <span class="hero__spec-label t-caption">Maduración Controlada</span>
+              </li>
+              <li class="hero__spec">
+                <span class="hero__spec-value t-headline-sm c-gold">35 min</span>
+                <span class="hero__spec-label t-caption">Delivery Exprés Brasa</span>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Columna derecha: imagen destacada -->
+          <div class="hero__media">
+            <figure class="hero__card">
+              <img class="hero__img" src="images/hero-tomahawk.webp" alt="Tomahawk y carnes al hierro sobre brasas al rojo vivo en Zamhu's Grill" width="1200" height="896">
+              <div class="hero__img-shade" aria-hidden="true"></div>
+              <figcaption class="hero__plate">
+                <div class="hero__plate-info">
+                  <span class="t-stamp c-gold uppercase">Plancha de Hierro Fundido</span>
+                  <span class="t-headline-sm c-surface uppercase">Tomahawk Prime Flameado</span>
+                </div>
+                <span class="t-price c-peach">S/ 145.00</span>
+              </figcaption>
+            </figure>
+          </div>
+        </div>
+      </div>
+
+      <!-- Cinta animada (marquee): el grupo se repite para que el loop sea continuo -->
+      <div class="marquee">
+        <div class="marquee__track">
+          <div class="marquee__group">
+            <span class="c-flame">🔥 Delivery activo hasta las 11:00 PM</span>
+            <span class="c-gold">• 📍 Zona de cobertura Lima Metropolitana</span>
+            <span class="c-flame">• 🥩 Cortes madurados al carbón de leña</span>
+            <span class="c-gold">• 🍢 Tradición anticuchera peruana</span>
+            <span class="c-flame">• ⏰ Martes a domingo 12:30 PM - 11:00 PM</span>
+            <span class="c-gold">• 🔥 Pedidos al WhatsApp 987 654 321</span>
+          </div>
+          <div class="marquee__group" aria-hidden="true">
+            <span class="c-flame">🔥 Delivery activo hasta las 11:00 PM</span>
+            <span class="c-gold">• 📍 Zona de cobertura Lima Metropolitana</span>
+            <span class="c-flame">• 🥩 Cortes madurados al carbón de leña</span>
+            <span class="c-gold">• 🍢 Tradición anticuchera peruana</span>
+            <span class="c-flame">• ⏰ Martes a domingo 12:30 PM - 11:00 PM</span>
+            <span class="c-gold">• 🔥 Pedidos al WhatsApp 987 654 321</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== 2. ESTRELLAS DE LA PARRILLA ========== -->
+    <section class="section" id="parrilla">
+      <div class="container">
+        <header class="section-head">
+          <div class="eyebrow section-head__eyebrow">
+            <span class="icon icon--sm" aria-hidden="true">local_fire_department</span>
+            <span>Selección Exclusiva de Cortes</span>
+            <span class="icon icon--sm" aria-hidden="true">local_fire_department</span>
+          </div>
+          <h2 class="section-head__title section-head__title--wide t-headline-lg">Estrellas de la Parrilla</h2>
+          <p class="section-head__text t-body-md">
+            Cortes con balance idóneo de marmoleo y grasa perimetral caramelizada a fuego directo de carbón vegetal.
+          </p>
+        </header>
+
+        <div class="stars__grid">
+          <article class="dish-card">
+            <div class="dish-card__top">
+              <span class="tag tag--red">Más Pedido</span>
+              <span class="dish-card__weight">400g / 14oz</span>
+            </div>
+            <div>
+              <h3 class="dish-card__title t-headline-sm">Bife Ancho a la Brasa</h3>
+              <p class="dish-card__text t-body-md">
+                400g de corte jugoso con ojo de bife veteado, acompañado de papas rústicas al romero y ensalada fresca parrillera.
+              </p>
+            </div>
+            <div class="dish-card__footer">
+              <span class="t-price c-gold">S/ 68.00</span>
+              <button class="dish-card__btn" type="button" data-item="Bife Ancho a la Brasa" data-price="68.00">Pedir</button>
+            </div>
+          </article>
+
+          <article class="dish-card">
+            <div class="dish-card__top">
+              <span class="tag tag--gold">Especialidad</span>
+              <span class="dish-card__weight">350g / 12oz</span>
+            </div>
+            <div>
+              <h3 class="dish-card__title t-headline-sm">Lomo Fino Zamhu's</h3>
+              <p class="dish-card__text t-body-md">
+                350g sellados al término perfecto con chimichurri casero ahumado de la casa, papas amarillas fritas y choclo dulce.
+              </p>
+            </div>
+            <div class="dish-card__footer">
+              <span class="t-price c-gold">S/ 72.00</span>
+              <button class="dish-card__btn" type="button" data-item="Lomo Fino Zamhu's" data-price="72.00">Pedir</button>
+            </div>
+          </article>
+
+          <article class="dish-card">
+            <div class="dish-card__top">
+              <span class="tag tag--orange">Corte Premium</span>
+              <span class="dish-card__weight">1000g / 35oz</span>
+            </div>
+            <div>
+              <h3 class="dish-card__title t-headline-sm">Tomahawk Steak Prime</h3>
+              <p class="dish-card__text t-body-md">
+                1kg de corte ribeye con hueso largo flameado en mesa con mantequilla parrillera, sal gruesa de maras y ajíes asados.
+              </p>
+            </div>
+            <div class="dish-card__footer">
+              <span class="t-price c-gold">S/ 145.00</span>
+              <button class="dish-card__btn" type="button" data-item="Tomahawk Steak Prime" data-price="145.00">Pedir</button>
+            </div>
+          </article>
+
+          <article class="dish-card">
+            <div class="dish-card__top">
+              <span class="tag tag--dark c-gold">Recomendado</span>
+              <span class="dish-card__weight">380g / 13oz</span>
+            </div>
+            <div>
+              <h3 class="dish-card__title t-headline-sm">Cuadril de Picanha</h3>
+              <p class="dish-card__text t-body-md">
+                Generosa tapa de cuadril asada en cruz con su capa de grasa crujiente y dorada con sal rosada y ensalada criolla.
+              </p>
+            </div>
+            <div class="dish-card__footer">
+              <span class="t-price c-gold">S/ 64.00</span>
+              <button class="dish-card__btn" type="button" data-item="Cuadril de Picanha" data-price="64.00">Pedir</button>
+            </div>
+          </article>
+
+          <article class="dish-card">
+            <div class="dish-card__top">
+              <span class="tag tag--dark c-peach">Favorito</span>
+              <span class="dish-card__weight">500g / 17oz</span>
+            </div>
+            <div>
+              <h3 class="dish-card__title t-headline-sm">Costillas BBQ Rústicas</h3>
+              <p class="dish-card__text t-body-md">
+                Costillar de cerdo ahumado durante 4 horas con maderos frutales y glaseado en salsa BBQ artesanal con base de ají panca.
+              </p>
+            </div>
+            <div class="dish-card__footer">
+              <span class="t-price c-gold">S/ 58.00</span>
+              <button class="dish-card__btn" type="button" data-item="Costillas BBQ Rústicas" data-price="58.00">Pedir</button>
+            </div>
+          </article>
+
+          <article class="dish-card">
+            <div class="dish-card__top">
+              <span class="tag tag--dark c-surface">Clásico</span>
+              <span class="dish-card__weight">350g / 12oz</span>
+            </div>
+            <div>
+              <h3 class="dish-card__title t-headline-sm">Asado de Tira Angus</h3>
+              <p class="dish-card__text t-body-md">
+                350g de costilla transversal con hueso a fuego lento de quebracho, textura tierna y jugo intenso.
+              </p>
+            </div>
+            <div class="dish-card__footer">
+              <span class="t-price c-gold">S/ 62.00</span>
+              <button class="dish-card__btn" type="button" data-item="Asado de Tira Angus" data-price="62.00">Pedir</button>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== 3. PARRILLADAS PARA COMPARTIR ========== -->
+    <section class="section section--dim" id="combos">
+      <div class="container">
+        <header class="combos__head">
+          <div>
+            <span class="eyebrow">Para Grupos &amp; Familias</span>
+            <h2 class="combos__title t-headline-lg">Parrilladas para Compartir</h2>
+          </div>
+          <p class="combos__intro t-body-md">
+            Grandes bandejas servidas en braseros de mesa con carbón encendido para mantener la temperatura idónea.
+          </p>
+        </header>
+
+        <!-- Combo destacado -->
+        <article class="combo-hero">
+          <div class="combo-hero__media">
+            <img class="combo-hero__img" src="images/parrillada.webp" alt="Gran parrillada Full Zamhu's servida sobre tabla de madera con cortes mixtos, chorizos y guarniciones" width="1376" height="768" loading="lazy">
+            <div class="combo-hero__shade" aria-hidden="true"></div>
+            <span class="combo-hero__badge">Reina de la Casa</span>
+          </div>
+
+          <div class="combo-hero__body">
+            <div>
+              <div class="combo-hero__meta">
+                <span class="t-stamp c-gold uppercase">4 a 5 Personas</span>
+                <span class="t-price c-gold">S/ 189.00</span>
+              </div>
+              <h3 class="combo-hero__title t-headline-md">Parrillada Full Zamhu's</h3>
+              <p class="combo-hero__text t-body-md">
+                Bife Angosto, Cuadril de res jugoso, 4 palos de Anticuchos de puro corazón tierno, Chorizos parrilleros artesanales, Morcilla parrillera de la casa, porción gigante de papas nativas doradas al wok de brasas, choclo desgranado con queso y ensalada mixta.
+              </p>
+              <ul class="combo-hero__chips">
+                <li class="chip">Bife Angosto</li>
+                <li class="chip">Anticuchos</li>
+                <li class="chip">Chorizos</li>
+                <li class="chip">Morcilla</li>
+                <li class="chip">Papas Nativas</li>
+              </ul>
+            </div>
+            <button class="btn btn--flame btn--block combo-hero__btn" type="button" data-item="Parrillada Full Zamhu's" data-price="189.00">
+              <span class="icon icon--lg" aria-hidden="true">local_fire_department</span>
+              <span>Pedir Parrillada Full Zamhu's</span>
+            </button>
+          </div>
+        </article>
+
+        <!-- Otros combos -->
+        <div class="combos__grid">
+          <article class="combo-card">
+            <div>
+              <div class="combo-card__meta">
+                <span class="combo-card__people">2 Personas</span>
+                <span class="t-price c-gold">S/ 98.00</span>
+              </div>
+              <h4 class="combo-card__title t-headline-sm">Parrilla Para Dos</h4>
+              <p class="combo-card__text t-body-md">
+                Bife de res a la brasa + filete de pollo deshuesado a la leña + 2 chorizos finos artesanales + guarnición de papas rústicas y ensalada fresca.
+              </p>
+            </div>
+            <button class="btn btn--brasa btn--block" type="button" data-item="Parrilla Para Dos" data-price="98.00">Pedir Combo (S/&nbsp;98)</button>
+          </article>
+
+          <article class="combo-card">
+            <div>
+              <div class="combo-card__meta">
+                <span class="combo-card__people">3 Personas</span>
+                <span class="t-price c-gold">S/ 115.00</span>
+              </div>
+              <h4 class="combo-card__title t-headline-sm">Combo Zamhu's Clásico</h4>
+              <p class="combo-card__text t-body-md">
+                Corte de Picanha tierna a la parrilla + 3 palos de anticuchos macerados + papas rústicas doradas en manteca de hierbas + ensalada parrillera.
+              </p>
+            </div>
+            <button class="btn btn--brasa btn--block" type="button" data-item="Combo Zamhu's Clásico" data-price="115.00">Pedir Combo (S/&nbsp;115)</button>
+          </article>
+
+          <article class="combo-card">
+            <div>
+              <div class="combo-card__meta">
+                <span class="combo-card__people">Hasta 6 Personas</span>
+                <span class="t-price c-gold">S/ 249.00</span>
+              </div>
+              <h4 class="combo-card__title t-headline-sm">Gran Banquete del Fuego</h4>
+              <p class="combo-card__text t-body-md">
+                4 cortes prime seleccionados + rack de costillas ahumadas BBQ panca + porción doble de anticuchos y guarniciones ilimitadas para la mesa.
+              </p>
+            </div>
+            <button class="btn btn--brasa btn--block" type="button" data-item="Gran Banquete del Fuego" data-price="249.00">Pedir Combo (S/&nbsp;249)</button>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== 4. PIQUEOS & ANTICUCHOS ========== -->
+    <section class="section" id="anticuchos">
+      <div class="container">
+        <div class="anticuchos__grid">
+          <!-- Foto con humo y brasas -->
+          <figure class="anticuchos__card">
+            <img class="anticuchos__img" src="images/anticuchos.webp" alt="Anticuchos tradicionales sobre parrilla con brasas calientes y humo aromatizado" width="1200" height="896" loading="lazy">
+            <div class="anticuchos__shade" aria-hidden="true"></div>
+            <figcaption class="anticuchos__caption">
+              <span class="t-stamp c-gold uppercase">Tradición de Antaño</span>
+              <p class="t-body-md c-surface">Carbón de algarrobo y brocha de panca natural.</p>
+            </figcaption>
+          </figure>
+
+          <!-- Lista de piqueos -->
+          <div class="anticuchos__content">
+            <div>
+              <span class="eyebrow">Orgullo Peruano</span>
+              <h2 class="anticuchos__title t-headline-lg">Piqueos &amp; Anticuchos Selectos</h2>
+              <p class="anticuchos__intro t-body-md">
+                Elaborados con corazón 100% de res limpia, macerados por más de 12 horas con receta de abuela a base de ají panca cusqueño.
+              </p>
+            </div>
+
+            <div class="anticuchos__list">
+              <article class="piqueo">
+                <div class="piqueo__info">
+                  <h3 class="t-headline-sm c-surface uppercase">Anticuchos de Corazón Tradicionales</h3>
+                  <p class="piqueo__text t-body-md">
+                    3 palos tiernos macerados en ají panca, vinagre tinto y comino andino, servidos con papa dorada y choclo con queso fresco.
+                  </p>
+                </div>
+                <div class="piqueo__order">
+                  <span class="t-price c-gold">S/ 36.00</span>
+                  <button class="btn-mini btn-mini--red" type="button" data-item="Anticuchos Tradicionales" data-price="36.00">Pedir</button>
+                </div>
+              </article>
+
+              <article class="piqueo">
+                <div class="piqueo__info">
+                  <h3 class="t-headline-sm c-surface uppercase">Champiñones a la Parrilla</h3>
+                  <p class="piqueo__text t-body-md">
+                    Enteros y jugosos, bañados con emulsión tibia de mantequilla de ajo, finas hierbas y toque ahumado.
+                  </p>
+                </div>
+                <div class="piqueo__order">
+                  <span class="t-price c-gold">S/ 28.00</span>
+                  <button class="btn-mini btn-mini--brasa" type="button" data-item="Champiñones a la Parrilla" data-price="28.00">Pedir</button>
+                </div>
+              </article>
+
+              <article class="piqueo">
+                <div class="piqueo__info">
+                  <h3 class="t-headline-sm c-surface uppercase">Dúo de Chorizos Artesanales</h3>
+                  <p class="piqueo__text t-body-md">
+                    Uno fino con bouquet de hierbas frescas y uno picante parrillero ahumado en brasas de leña.
+                  </p>
+                </div>
+                <div class="piqueo__order">
+                  <span class="t-price c-gold">S/ 29.00</span>
+                  <button class="btn-mini btn-mini--brasa" type="button" data-item="Dúo de Chorizos Artesanales" data-price="29.00">Pedir</button>
+                </div>
+              </article>
+
+              <article class="piqueo">
+                <div class="piqueo__info">
+                  <h3 class="t-headline-sm c-surface uppercase">Mollejas al Carbón</h3>
+                  <p class="piqueo__text t-body-md">
+                    Crocantes por fuera y tiernas por dentro, maceradas al limón sutil y chimichurri criollo.
+                  </p>
+                </div>
+                <div class="piqueo__order">
+                  <span class="t-price c-gold">S/ 34.00</span>
+                  <button class="btn-mini btn-mini--brasa" type="button" data-item="Mollejas al Carbón" data-price="34.00">Pedir</button>
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== 5. CARTA COMPLETA ========== -->
+    <section class="section section--dim" id="carta">
+      <div class="container">
+        <header class="section-head section-head--tight">
+          <span class="eyebrow">Nuestra Propuesta Gastronómica</span>
+          <h2 class="section-head__title t-headline-lg">Carta Completa Zamhu's</h2>
+          <p class="section-head__text t-body-md">
+            Diseño limpio inspirado en el recetario tradicional. Haz clic en las categorías para explorar todos nuestros platillos.
+          </p>
+        </header>
+
+        <!-- Pestañas -->
+        <div class="carta__tabs" role="tablist" aria-label="Categorías de la carta">
+          <button class="carta__tab is-active" id="tab-especiales" type="button" role="tab" aria-selected="true" aria-controls="panel-especiales">Especiales</button>
+          <button class="carta__tab" id="tab-anticuchos" type="button" role="tab" aria-selected="false" aria-controls="panel-anticuchos" tabindex="-1">Anticuchos</button>
+          <button class="carta__tab" id="tab-parrilla" type="button" role="tab" aria-selected="false" aria-controls="panel-parrilla" tabindex="-1">De la Parrilla</button>
+          <button class="carta__tab" id="tab-criollos" type="button" role="tab" aria-selected="false" aria-controls="panel-criollos" tabindex="-1">Criollos</button>
+          <button class="carta__tab" id="tab-brasa" type="button" role="tab" aria-selected="false" aria-controls="panel-brasa" tabindex="-1">A la Brasa</button>
+          <button class="carta__tab" id="tab-ensaladas" type="button" role="tab" aria-selected="false" aria-controls="panel-ensaladas" tabindex="-1">Ensaladas</button>
+          <button class="carta__tab" id="tab-bebidas" type="button" role="tab" aria-selected="false" aria-controls="panel-bebidas" tabindex="-1">Bebidas</button>
+          <button class="carta__tab" id="tab-postres" type="button" role="tab" aria-selected="false" aria-controls="panel-postres" tabindex="-1">Postres</button>
+        </div>
+
+        <!-- Paneles -->
+        <div class="carta__board">
+          <!-- Especiales -->
+          <ul class="carta__panel" id="panel-especiales" role="tabpanel" aria-labelledby="tab-especiales">
+            <li class="menu-row">
+              <div>
+                <h3 class="menu-row__name t-title-menu">Picanha al Fuego Vivo (500g)</h3>
+                <p class="menu-row__desc t-body-md">Corte premium con capa de grasa crujiente marinada con salmuera de ají charapita.</p>
+              </div>
+              <div class="menu-row__order">
+                <span class="t-price c-gold">S/ 84.00</span>
+                <button class="btn-mini btn-mini--plain" type="button" data-item="Picanha al Fuego Vivo" data-price="84.00">Pedir</button>
+              </div>
+            </li>
+            <li class="menu-row">
+              <div>
+                <h3 class="menu-row__name t-title-menu">Tomahawk Prime Añejo (1kg)</h3>
+                <p class="menu-row__desc t-body-md">Ribeye con hueso largo madurado en seco, cocido al calor de leña de manzano.</p>
+              </div>
+              <div class="menu-row__order">
+                <span class="t-price c-gold">S/ 145.00</span>
+                <button class="btn-mini btn-mini--plain" type="button" data-item="Tomahawk Prime Añejo" data-price="145.00">Pedir</button>
+              </div>
+            </li>
+            <li class="menu-row">
+              <div>
+                <h3 class="menu-row__name t-title-menu">Costillar Glaseado al Ají Panca</h3>
+                <p class="menu-row__desc t-body-md">Costillas de cerdo braseadas 4 horas, barnizadas con reducción de chicha de jora y panca.</p>
+              </div>
+              <div class="menu-row__order">
+                <span class="t-price c-gold">S/ 62.00</span>
+                <button class="btn-mini btn-mini--plain" type="button" data-item="Costillar Glaseado" data-price="62.00">Pedir</button>
+              </div>
+            </li>
+            <li class="menu-row">
+              <div>
+                <h3 class="menu-row__name t-title-menu">Lomo Saltado a la Brasa</h3>
+                <p class="menu-row__desc t-body-md">Trozos gruesos de lomo fino salteados al fuego vivo con cebolla roja, tomate y papas amarillas rústicas.</p>
+              </div>
+              <div class="menu-row__order">
+                <span class="t-price c-gold">S/ 56.00</span>
+                <button class="btn-mini btn-mini--plain" type="button" data-item="Lomo Saltado a la Brasa" data-price="56.00">Pedir</button>
+              </div>
+            </li>
+            <li class="menu-row">
+              <div>
+                <h3 class="menu-row__name t-title-menu">Pamplona de Pollo Zamhu's</h3>
+                <p class="menu-row__desc t-body-md">Suprema rellena de pimientos asados, queso andino y jamón ahumado envuelta en panceta crocante.</p>
+              </div>
+              <div class="menu-row__order">
+                <span class="t-price c-gold">S/ 48.00</span>
+                <button class="btn-mini btn-mini--plain" type="button" data-item="Pamplona de Pollo" data-price="48.00">Pedir</button>
+              </div>
+            </li>
+          </ul>
+
+          <!-- Anticuchos -->
+          <ul class="carta__panel" id="panel-anticuchos" role="tabpanel" aria-labelledby="tab-anticuchos" hidden>
+            <li class="menu-row">
+              <div>
+                <h3 class="menu-row__name t-title-menu">Anticuchos Clásicos de Corazón (3 palos)</h3>
+                <p class="menu-row__desc t-body-md">Maceración tradicional, choclo tierno y papas doradas con ají carretillero.</p>
+              </div>
+              <div class="menu-row__order">
+                <span class="t-price c-gold">S/ 36.00</span>
+                <button class="btn-mini btn-mini--plain" type="button" data-item="Anticuchos Clásicos" data-price="36.00">Pedir</button>
+              </div>
+            </li>
+            <li class="menu-row">
+              <div>
+                <h3 class="menu-row__name t-title-menu">Anticuchos de Lomo Fino (2 palos)</h3>
+                <p class="menu-row__desc t-body-md">Dados de lomo fino bañados en salsa parrillera con vegetales braseados.</p>
+              </div>
+              <div class="menu-row__order">
+                <span class="t-price c-gold">S/ 42.00</span>
+                <button class="btn-mini btn-mini--plain" type="button" data-item="Anticuchos de Lomo Fino" data-price="42.00">Pedir</button>
+              </div>
+            </li>
+            <li class="menu-row">
+              <div>
+                <h3 class="menu-row__name t-title-menu">Anticuchos de Pollo a la Naranja &amp; Ají</h3>
+                <p class="menu-row__desc t-body-md">Pechuga jugosa marinada con cítricos y hierbas aromáticas al carbón.</p>
+              </div>
+              <div class="menu-row__order">
+                <span class="t-price c-gold">S/ 32.00</span>
+                <button class="btn-mini btn-mini--plain" type="button" data-item="Anticuchos de Pollo" data-price="32.00">Pedir</button>
+              </div>
+            </li>
+            <li class="menu-row">
+              <div>
+                <h3 class="menu-row__name t-title-menu">Trilogía Anticuchera</h3>
+                <p class="menu-row__desc t-body-md">1 palo de corazón + 1 palo de lomo fino + 1 palo de mollejas con guarnición andina.</p>
+              </div>
+              <div class="menu-row__order">
+                <span class="t-price c-gold">S/ 44.00</span>
+                <button class="btn-mini btn-mini--plain" type="button" data-item="Trilogía Anticuchera" data-price="44.00">Pedir</button>
+              </div>
+            </li>
+          </ul>
+
+          <!-- De la Parrilla -->
+          <ul class="carta__panel" id="panel-parrilla" role="tabpanel" aria-labelledby="tab-parrilla" hidden>
+            <li class="menu-row">
+              <div>
+                <h3 class="menu-row__name t-title-menu">Bife Angosto 350g</h3>
+                <p class="menu-row__desc t-body-md">Corte magro con reborde de grasa crujiente, papas al horno con crema agria.</p>
+              </div>
+              <div class="menu-row__order">
+                <span class="t-price c-gold">S/ 65.00</span>
+                <button class="btn-mini btn-mini--plain" type="button" data-item="Bife Angosto 350g" data-price="65.00">Pedir</button>
+              </div>
+            </li>
+            <li class="menu-row">
+              <div>
+                <h3 class="menu-row__name t-title-menu">Churrasco Redondo a la Sal</h3>
+                <p class="menu-row__desc t-body-md">Clásico corte criollo sazonado únicamente con sal de grano grueso y carbón vivo.</p>
+              </div>
+              <div class="menu-row__order">
+                <span class="t-price c-gold">S/ 52.00</span>
+                <button class="btn-mini btn-mini--plain" type="button" data-item="Churrasco Redondo" data-price="52.00">Pedir</button>
+              </div>
+            </li>
+            <li class="menu-row">
+              <div>
+                <h3 class="menu-row__name t-title-menu">Baby Beef 400g</h3>
+                <p class="menu-row__desc t-body-md">Corte grueso de corazón de cuadril, extremadamente jugoso y suave.</p>
+              </div>
+              <div class="menu-row__order">
+                <span class="t-price c-gold">S/ 74.00</span>
+                <button class="btn-mini btn-mini--plain" type="button" data-item="Baby Beef 400g" data-price="74.00">Pedir</button>
+              </div>
+            </li>
+            <li class="menu-row">
+              <div>
+                <h3 class="menu-row__name t-title-menu">Entraña Fina Angus</h3>
+                <p class="menu-row__desc t-body-md">Sabor intenso y textura inigualable, servida en corte diagonal con chimichurri casero.</p>
+              </div>
+              <div class="menu-row__order">
+                <span class="t-price c-gold">S/ 79.00</span>
+                <button class="btn-mini btn-mini--plain" type="button" data-item="Entraña Fina Angus" data-price="79.00">Pedir</button>
+              </div>
+            </li>
+          </ul>
+
+          <!-- Criollos -->
+          <ul class="carta__panel" id="panel-criollos" role="tabpanel" aria-labelledby="tab-criollos" hidden>
+            <li class="menu-row">
+              <div>
+                <h3 class="menu-row__name t-title-menu">Tacu Tacu con Sábana de Lomo</h3>
+                <p class="menu-row__desc t-body-md">Costra crocante de frejoles canario, plátano frito y huevo montado al dente.</p>
+              </div>
+              <div class="menu-row__order">
+                <span class="t-price c-gold">S/ 54.00</span>
+                <button class="btn-mini btn-mini--plain" type="button" data-item="Tacu Tacu con Lomo" data-price="54.00">Pedir</button>
+              </div>
+            </li>
+            <li class="menu-row">
+              <div>
+                <h3 class="menu-row__name t-title-menu">Seco de Asado de Tira a la Norteña</h3>
+                <p class="menu-row__desc t-body-md">Macerado en culantro de chacra, loche y chicha de jora con frejoles batidos.</p>
+              </div>
+              <div class="menu-row__order">
+                <span class="t-price c-gold">S/ 58.00</span>
+                <button class="btn-mini btn-mini--plain" type="button" data-item="Seco de Asado de Tira" data-price="58.00">Pedir</button>
+              </div>
+            </li>
+            <li class="menu-row">
+              <div>
+                <h3 class="menu-row__name t-title-menu">Arroz con Pato Braseado</h3>
+                <p class="menu-row__desc t-body-md">Pato dorado terminado al carbón sobre arroz arverjado y zarza criolla de rabanito.</p>
+              </div>
+              <div class="menu-row__order">
+                <span class="t-price c-gold">S/ 52.00</span>
+                <button class="btn-mini btn-mini--plain" type="button" data-item="Arroz con Pato Braseado" data-price="52.00">Pedir</button>
+              </div>
+            </li>
+            <li class="menu-row">
+              <div>
+                <h3 class="menu-row__name t-title-menu">Fetuccini a la Huancaína con Lomo</h3>
+                <p class="menu-row__desc t-body-md">Pasta al dente en salsa huancaína artesanal de ají amarillo con trozos de lomo a la parrilla.</p>
+              </div>
+              <div class="menu-row__order">
+                <span class="t-price c-gold">S/ 55.00</span>
+                <button class="btn-mini btn-mini--plain" type="button" data-item="Fetuccini con Lomo" data-price="55.00">Pedir</button>
+              </div>
+            </li>
+          </ul>
+
+          <!-- A la Brasa -->
+          <ul class="carta__panel" id="panel-brasa" role="tabpanel" aria-labelledby="tab-brasa" hidden>
+            <li class="menu-row">
+              <div>
+                <h3 class="menu-row__name t-title-menu">Pollo a la Brasa Entero Zamhu's</h3>
+                <p class="menu-row__desc t-body-md">100% leña de quebracho, piel crocante especiada con papas fritas y cremas de la casa.</p>
+              </div>
+              <div class="menu-row__order">
+                <span class="t-price c-gold">S/ 72.00</span>
+                <button class="btn-mini btn-mini--plain" type="button" data-item="Pollo a la Brasa Entero" data-price="72.00">Pedir</button>
+              </div>
+            </li>
+            <li class="menu-row">
+              <div>
+                <h3 class="menu-row__name t-title-menu">1/2 Pollo a la Brasa con Guarniciones</h3>
+                <p class="menu-row__desc t-body-md">Media porción con papas crujientes y ensalada vinagreta clásica parrillera.</p>
+              </div>
+              <div class="menu-row__order">
+                <span class="t-price c-gold">S/ 39.00</span>
+                <button class="btn-mini btn-mini--plain" type="button" data-item="1/2 Pollo a la Brasa" data-price="39.00">Pedir</button>
+              </div>
+            </li>
+            <li class="menu-row">
+              <div>
+                <h3 class="menu-row__name t-title-menu">1/4 Pollo Parrillero (Pierna o Pechuga)</h3>
+                <p class="menu-row__desc t-body-md">Acompañado de papas amarillas doradas y ensalada de col agridulce.</p>
+              </div>
+              <div class="menu-row__order">
+                <span class="t-price c-gold">S/ 24.00</span>
+                <button class="btn-mini btn-mini--plain" type="button" data-item="1/4 Pollo Parrillero" data-price="24.00">Pedir</button>
+              </div>
+            </li>
+            <li class="menu-row">
+              <div>
+                <h3 class="menu-row__name t-title-menu">Alitas Rústicas al Carbón (8 unidades)</h3>
+                <p class="menu-row__desc t-body-md">Bañadas en salsa BBQ de sauco o picante acebichado con bastones de apio.</p>
+              </div>
+              <div class="menu-row__order">
+                <span class="t-price c-gold">S/ 32.00</span>
+                <button class="btn-mini btn-mini--plain" type="button" data-item="Alitas Rústicas" data-price="32.00">Pedir</button>
+              </div>
+            </li>
+          </ul>
+
+          <!-- Ensaladas -->
+          <ul class="carta__panel" id="panel-ensaladas" role="tabpanel" aria-labelledby="tab-ensaladas" hidden>
+            <li class="menu-row">
+              <div>
+                <h3 class="menu-row__name t-title-menu">Ensalada Zamhu's Grill</h3>
+                <p class="menu-row__desc t-body-md">Mix de lechugas hidropónicas, palta fuerte, choclo asado, tomates cherry confitados y vinagreta balsámica de ají amarillo.</p>
+              </div>
+              <div class="menu-row__order">
+                <span class="t-price c-gold">S/ 28.00</span>
+                <button class="btn-mini btn-mini--plain" type="button" data-item="Ensalada Zamhu's Grill" data-price="28.00">Pedir</button>
+              </div>
+            </li>
+            <li class="menu-row">
+              <div>
+                <h3 class="menu-row__name t-title-menu">Ensalada Parrillera Clásica</h3>
+                <p class="menu-row__desc t-body-md">Lechuga crespa fresca, tomate italiano, cebolla blanca en pluma, zanahoria rallada y vinagreta de vino tinto.</p>
+              </div>
+              <div class="menu-row__order">
+                <span class="t-price c-gold">S/ 22.00</span>
+                <button class="btn-mini btn-mini--plain" type="button" data-item="Ensalada Parrillera Clásica" data-price="22.00">Pedir</button>
+              </div>
+            </li>
+            <li class="menu-row">
+              <div>
+                <h3 class="menu-row__name t-title-menu">Ensalada César Ahumada con Pollo</h3>
+                <p class="menu-row__desc t-body-md">Hojas de romana, croutones de pan de masa madre al ajo, láminas de parmesano y pechuga a la leña.</p>
+              </div>
+              <div class="menu-row__order">
+                <span class="t-price c-gold">S/ 32.00</span>
+                <button class="btn-mini btn-mini--plain" type="button" data-item="Ensalada César Ahumada" data-price="32.00">Pedir</button>
+              </div>
+            </li>
+          </ul>
+
+          <!-- Bebidas -->
+          <ul class="carta__panel" id="panel-bebidas" role="tabpanel" aria-labelledby="tab-bebidas" hidden>
+            <li class="menu-row">
+              <div>
+                <h3 class="menu-row__name t-title-menu">Chicha Morada de Maíz Morado Canteño (Jarra 1L)</h3>
+                <p class="menu-row__desc t-body-md">Hervida con manzana de agua, membrillo, piña y clavo de olor.</p>
+              </div>
+              <div class="menu-row__order">
+                <span class="t-price c-gold">S/ 22.00</span>
+                <button class="btn-mini btn-mini--plain" type="button" data-item="Jarra Chicha Morada" data-price="22.00">Pedir</button>
+              </div>
+            </li>
+            <li class="menu-row">
+              <div>
+                <h3 class="menu-row__name t-title-menu">Pisco Sour Quebranta Catedral</h3>
+                <p class="menu-row__desc t-body-md">Pisco premium cuatro gallos, limón sutil recién exprimido y amargo de angostura.</p>
+              </div>
+              <div class="menu-row__order">
+                <span class="t-price c-gold">S/ 28.00</span>
+                <button class="btn-mini btn-mini--plain" type="button" data-item="Pisco Sour Catedral" data-price="28.00">Pedir</button>
+              </div>
+            </li>
+            <li class="menu-row">
+              <div>
+                <h3 class="menu-row__name t-title-menu">Maracuyá Sour Artesanal</h3>
+                <p class="menu-row__desc t-body-md">Pisco quebranta batido en shaker con pulpa viva de maracuyá norteña.</p>
+              </div>
+              <div class="menu-row__order">
+                <span class="t-price c-gold">S/ 26.00</span>
+                <button class="btn-mini btn-mini--plain" type="button" data-item="Maracuyá Sour" data-price="26.00">Pedir</button>
+              </div>
+            </li>
+            <li class="menu-row">
+              <div>
+                <h3 class="menu-row__name t-title-menu">Cerveza Artesanal IPA / Red Ale</h3>
+                <p class="menu-row__desc t-body-md">Botella 330ml de cervecería local de autor, notas lupuladas y maltosas.</p>
+              </div>
+              <div class="menu-row__order">
+                <span class="t-price c-gold">S/ 18.00</span>
+                <button class="btn-mini btn-mini--plain" type="button" data-item="Cerveza Artesanal" data-price="18.00">Pedir</button>
+              </div>
+            </li>
+          </ul>
+
+          <!-- Postres -->
+          <ul class="carta__panel" id="panel-postres" role="tabpanel" aria-labelledby="tab-postres" hidden>
+            <li class="menu-row">
+              <div>
+                <h3 class="menu-row__name t-title-menu">Picarones en Miel de Higo al Carbón</h3>
+                <p class="menu-row__desc t-body-md">4 aros crocantes de zapallo y camote con miel especiada reducida en leña.</p>
+              </div>
+              <div class="menu-row__order">
+                <span class="t-price c-gold">S/ 20.00</span>
+                <button class="btn-mini btn-mini--plain" type="button" data-item="Picarones Tradicionales" data-price="20.00">Pedir</button>
+              </div>
+            </li>
+            <li class="menu-row">
+              <div>
+                <h3 class="menu-row__name t-title-menu">Cheesecake de Sauco Andino</h3>
+                <p class="menu-row__desc t-body-md">Base crocante de galleta con queso crema horneado y compota silvestre de sauco.</p>
+              </div>
+              <div class="menu-row__order">
+                <span class="t-price c-gold">S/ 22.00</span>
+                <button class="btn-mini btn-mini--plain" type="button" data-item="Cheesecake de Sauco" data-price="22.00">Pedir</button>
+              </div>
+            </li>
+            <li class="menu-row">
+              <div>
+                <h3 class="menu-row__name t-title-menu">Suspiro a la Limeña Tradicional</h3>
+                <p class="menu-row__desc t-body-md">Manjar blanco suave con yemas de huevo y merengue al oporto espolvoreado con canela.</p>
+              </div>
+              <div class="menu-row__order">
+                <span class="t-price c-gold">S/ 19.00</span>
+                <button class="btn-mini btn-mini--plain" type="button" data-item="Suspiro a la Limeña" data-price="19.00">Pedir</button>
+              </div>
+            </li>
+            <li class="menu-row">
+              <div>
+                <h3 class="menu-row__name t-title-menu">Café Pasado de Chanchamayo</h3>
+                <p class="menu-row__desc t-body-md">Gota a gota tradicional con granos de café arábica de altura recién molidos.</p>
+              </div>
+              <div class="menu-row__order">
+                <span class="t-price c-gold">S/ 9.00</span>
+                <button class="btn-mini btn-mini--plain" type="button" data-item="Café Pasado" data-price="9.00">Pedir</button>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== 6. BAR & BEBIDAS ========== -->
+    <section class="section">
+      <div class="container">
+        <div class="bar__grid">
+          <!-- Intro + maridaje -->
+          <div class="bar__intro">
+            <div>
+              <span class="eyebrow">Coctelería de Autor &amp; Refrescos</span>
+              <h2 class="bar__title t-headline-lg">Bar &amp; Bebidas Destacadas</h2>
+              <p class="bar__text t-body-md">
+                El maridaje perfecto para carnes rojas y cortes al carbón. Macerados tradicionales y botellas de vino del nuevo mundo.
+              </p>
+            </div>
+            <blockquote class="bar__pairing">
+              <span class="bar__pairing-label">Maridaje Recomendado</span>
+              <p class="t-body-md c-surface">
+                "Para el Bife Ancho o Tomahawk, sugerimos nuestro Malbec Reserva servido a 16°C o un clásico Pisco Sour Catedral."
+              </p>
+            </blockquote>
+          </div>
+
+          <!-- Lista de bebidas -->
+          <ul class="bar__list">
+            <li class="drink">
+              <div>
+                <h3 class="drink__name">Chicha Morada de la Casa</h3>
+                <span class="t-caption c-variant">Jarra 1L o Vaso Personal</span>
+              </div>
+              <div class="drink__order">
+                <div class="t-price c-gold">S/ 22 / S/ 8</div>
+                <button class="drink__add" type="button" data-item="Chicha Morada" data-price="22.00">Añadir</button>
+              </div>
+            </li>
+            <li class="drink">
+              <div>
+                <h3 class="drink__name">Emoliente Frutado Glaseado</h3>
+                <span class="t-caption c-variant">Con piña, linaza y boldo silvestre</span>
+              </div>
+              <div class="drink__order">
+                <div class="t-price c-gold">S/ 12.00</div>
+                <button class="drink__add" type="button" data-item="Emoliente Frutado" data-price="12.00">Añadir</button>
+              </div>
+            </li>
+            <li class="drink">
+              <div>
+                <h3 class="drink__name">Maracuyá Sour Artesanal</h3>
+                <span class="t-caption c-variant">Pisco Quebranta + pulpa natural</span>
+              </div>
+              <div class="drink__order">
+                <div class="t-price c-gold">S/ 26.00</div>
+                <button class="drink__add" type="button" data-item="Maracuyá Sour" data-price="26.00">Añadir</button>
+              </div>
+            </li>
+            <li class="drink">
+              <div>
+                <h3 class="drink__name">Pisco Sour Quebranta</h3>
+                <span class="t-caption c-variant">Doble golpe en copa catedral</span>
+              </div>
+              <div class="drink__order">
+                <div class="t-price c-gold">S/ 28.00</div>
+                <button class="drink__add" type="button" data-item="Pisco Sour" data-price="28.00">Añadir</button>
+              </div>
+            </li>
+            <li class="drink">
+              <div>
+                <h3 class="drink__name">Cervezas Artesanales</h3>
+                <span class="t-caption c-variant">Variedades IPA, Porter &amp; Blonde</span>
+              </div>
+              <div class="drink__order">
+                <div class="t-price c-gold">S/ 18.00</div>
+                <button class="drink__add" type="button" data-item="Cerveza Artesanal" data-price="18.00">Añadir</button>
+              </div>
+            </li>
+            <li class="drink">
+              <div>
+                <h3 class="drink__name">Vinos Tintos Malbec &amp; Cab.</h3>
+                <span class="t-caption c-variant">Copa seleccionada o botella entera</span>
+              </div>
+              <div class="drink__order">
+                <div class="t-price c-gold">Copa S/ 24</div>
+                <button class="drink__add" type="button" data-item="Copa de Vino Malbec" data-price="24.00">Añadir</button>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== 7. POSTRES & CAFÉS ========== -->
+    <section class="section section--dim section--compact">
+      <div class="container">
+        <header class="section-head section-head--tight">
+          <span class="eyebrow">El Cierre Dulce</span>
+          <h2 class="section-head__title t-headline-lg">Postres Tradicionales &amp; Cafés</h2>
+        </header>
+
+        <div class="desserts__grid">
+          <article class="dessert">
+            <div>
+              <span class="t-price c-gold">S/ 20.00</span>
+              <h3 class="dessert__name t-headline-sm">Picarones en Miel de Higo</h3>
+              <p class="t-body-md c-variant">Crujientes al carbón, aromatizados con canela y clavo de olor.</p>
+            </div>
+            <button class="btn-mini btn-mini--brasa dessert__btn" type="button" data-item="Picarones en Miel de Higo" data-price="20.00">Pedir Postre</button>
+          </article>
+
+          <article class="dessert">
+            <div>
+              <span class="t-price c-gold">S/ 22.00</span>
+              <h3 class="dessert__name t-headline-sm">Cheesecake de Sauco</h3>
+              <p class="t-body-md c-variant">Cremoso y horneado con jalea artesanal de sauco andino del valle.</p>
+            </div>
+            <button class="btn-mini btn-mini--brasa dessert__btn" type="button" data-item="Cheesecake de Sauco" data-price="22.00">Pedir Postre</button>
+          </article>
+
+          <article class="dessert">
+            <div>
+              <span class="t-price c-gold">S/ 19.00</span>
+              <h3 class="dessert__name t-headline-sm">Suspiro a la Limeña</h3>
+              <p class="t-body-md c-variant">Receta limeña de antaño con merengue al oporto y canela.</p>
+            </div>
+            <button class="btn-mini btn-mini--brasa dessert__btn" type="button" data-item="Suspiro a la Limeña" data-price="19.00">Pedir Postre</button>
+          </article>
+
+          <article class="dessert">
+            <div>
+              <span class="t-price c-gold">S/ 9.00</span>
+              <h3 class="dessert__name t-headline-sm">Café de Chanchamayo</h3>
+              <p class="t-body-md c-variant">Filtrado en mesa gota a gota. Aromático, equilibrado y con cuerpo.</p>
+            </div>
+            <button class="btn-mini btn-mini--brasa dessert__btn" type="button" data-item="Café de Chanchamayo" data-price="9.00">Pedir Café</button>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== 8. BANNER DE MARCA ========== -->
+    <section class="banner">
+      <div class="banner__bg" aria-hidden="true">
+        <img class="banner__img" src="images/salon.webp" alt="" width="1376" height="768" loading="lazy">
+        <div class="banner__veil"></div>
+        <div class="banner__fade"></div>
+      </div>
+
+      <div class="banner__content">
+        <span class="banner__tag">Experiencia Gastronómica</span>
+        <h2 class="banner__title t-display-fluid">"Donde el fuego une y la buena carne se comparte."</h2>
+        <p class="banner__text t-body-lg">
+          Vivir la experiencia Zamhu's es rendir homenaje a la verdadera técnica de las brasas: paciencia, temperatura y respeto por el producto.
+        </p>
+        <a class="btn btn--flame banner__btn" href="https://wa.me/51987654321?text=Hola,%20deseo%20reservar%20una%20mesa%20en%20Zamhu's%20Grill" target="_blank" rel="noopener noreferrer">
+          Reservar Mesa en Salón
+        </a>
+      </div>
+    </section>
+
+    <!-- ========== 9. UBÍCANOS & RESERVAS ========== -->
+    <section class="section section--dim" id="ubicanos">
+      <div class="container">
+        <header class="section-head">
+          <span class="eyebrow">Encuéntranos en Lima</span>
+          <h2 class="section-head__title t-headline-lg">Ubícanos &amp; Reservas</h2>
+          <p class="section-head__text section-head__text--narrow t-body-md">
+            Visítanos en cualquiera de nuestros dos locales rústicos o solicita tu pedido por delivery caliente.
+          </p>
+        </header>
+
+        <div class="info__grid">
+          <!-- Sedes -->
+          <article class="info-card">
+            <div>
+              <div class="info-card__head">
+                <span class="icon icon--2xl" aria-hidden="true">pin_drop</span>
+                <h3 class="t-headline-sm c-surface uppercase">Nuestras Sedes</h3>
+              </div>
+              <div class="info-card__stack">
+                <div class="venue">
+                  <strong class="venue__name">Sede San Isidro</strong>
+                  <p>Av. Los Conquistadores 780, San Isidro</p>
+                  <a class="venue__map" href="https://maps.google.com/?q=Av.+Los+Conquistadores+780+San+Isidro+Lima" target="_blank" rel="noopener noreferrer">
+                    <span class="icon icon--sm" aria-hidden="true">directions</span> Ver en Google Maps
+                  </a>
+                </div>
+                <div class="venue">
+                  <strong class="venue__name">Sede Surco</strong>
+                  <p>Av. Primavera 1120, Santiago de Surco</p>
+                  <a class="venue__map" href="https://maps.google.com/?q=Av.+Primavera+1120+Surco+Lima" target="_blank" rel="noopener noreferrer">
+                    <span class="icon icon--sm" aria-hidden="true">directions</span> Ver en Google Maps
+                  </a>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <!-- Horarios -->
+          <article class="info-card">
+            <div>
+              <div class="info-card__head">
+                <span class="icon icon--2xl" aria-hidden="true">schedule</span>
+                <h3 class="t-headline-sm c-surface uppercase">Horarios de Brasa</h3>
+              </div>
+              <ul class="hours">
+                <li class="hours__row">
+                  <span class="hours__day">Martes a Sábado</span>
+                  <span class="c-gold">12:30 PM - 11:00 PM</span>
+                </li>
+                <li class="hours__row">
+                  <span class="hours__day">Domingos</span>
+                  <span class="c-gold">12:30 PM - 06:00 PM</span>
+                </li>
+                <li class="hours__row">
+                  <span class="hours__day">Lunes</span>
+                  <span class="hours__closed">Cerrado por reposición</span>
+                </li>
+              </ul>
+              <p class="hours__note t-caption">
+                * Cocina activa ininterrumpidamente durante todo el turno. Reservas sujetas a 15 min de tolerancia.
+              </p>
+            </div>
+          </article>
+
+          <!-- Atención & Pagos -->
+          <article class="info-card">
+            <div>
+              <div class="info-card__head">
+                <span class="icon icon--2xl" aria-hidden="true">payments</span>
+                <h3 class="t-headline-sm c-surface uppercase">Atención &amp; Pagos</h3>
+              </div>
+              <div class="contact">
+                <div>
+                  <span class="contact__label">WhatsApp Central:</span>
+                  <a class="contact__phone t-headline-sm" href="https://wa.me/51987654321">+51 987 654 321</a>
+                </div>
+                <div class="contact__pay">
+                  <span class="contact__label">Medios de Pago Aceptados:</span>
+                  <ul class="contact__chips">
+                    <li class="chip chip--pay">Visa</li>
+                    <li class="chip chip--pay">Mastercard</li>
+                    <li class="chip chip--pay">Amex</li>
+                    <li class="chip chip--pay">Yape</li>
+                    <li class="chip chip--pay">Plin</li>
+                    <li class="chip chip--pay">Efectivo</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <a class="btn btn--brasa btn--block info-card__btn" href="https://wa.me/51987654321?text=Hola,%20deseo%20consultar%20por%20mi%20cobertura%20de%20delivery" target="_blank" rel="noopener noreferrer">
+              Consultar Cobertura
+            </a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== 10. CTA FINAL ========== -->
+    <section class="cta" id="pedido">
+      <div class="cta__glow" aria-hidden="true"></div>
+
+      <div class="cta__content">
+        <div class="cta__icon" aria-hidden="true">
+          <span class="icon icon--3xl">local_fire_department</span>
+        </div>
+        <h2 class="t-display-fluid">¿Antojo de la Mejor Parrilla?</h2>
+        <p class="cta__text t-body-lg">
+          Pide ya y te lo llevamos caliente a tu mesa en empaques térmicos especiales que conservan los jugos intactos.
+        </p>
+
+        <div class="cta__actions">
+          <a class="btn btn--flame cta__btn cta__btn--main" href="https://wa.me/51987654321?text=Hola%20Zamhu's%20Grill,%20deseo%20hacer%20un%20pedido%20inmediato" target="_blank" rel="noopener noreferrer">
+            <span class="icon icon--lg" aria-hidden="true">chat</span>
+            <span>Pedir por WhatsApp</span>
+          </a>
+          <a class="btn cta__btn cta__btn--call" href="tel:+51987654321">
+            <span class="icon icon--lg" aria-hidden="true">call</span>
+            <span>Llamar a Tienda</span>
+          </a>
+        </div>
+
+        <span class="cta__note t-caption">Tiempo promedio de entrega: 35 a 45 minutos en Lima</span>
+      </div>
+    </section>
+  </main>
+
+  <!-- ========== FOOTER ========== -->
+  <footer class="footer">
+    <div class="container footer__inner">
+      <div class="footer__grid">
+        <!-- Marca -->
+        <div class="footer__col">
+          <img class="footer__logo" src="images/logo.webp" alt="Zamhu's Grill · Carnes · Anticuchos · Bar" width="480" height="282" loading="lazy">
+          <p class="t-body-md c-variant">
+            El auténtico sabor del carbón y la leña. Cortes seleccionados, tradición parrillera y cócteles de autor en un ambiente rústico inigualable.
+          </p>
+          <div class="footer__seal">
+            <span class="icon icon--sm" aria-hidden="true">local_fire_department</span>
+            <span>Fuego &amp; Carbón Artesanal</span>
+          </div>
+        </div>
+
+        <!-- Navegación -->
+        <nav class="footer__col" aria-label="Navegación del pie de página">
+          <h4 class="footer__title t-title-menu">Navegación</h4>
+          <div class="footer__links t-body-md">
+            <a href="#parrilla">Parrillas &amp; Cortes</a>
+            <a href="#anticuchos">Anticuchería Selecta</a>
+            <a href="#combos">Combos &amp; Planchas</a>
+            <a href="#carta">Bebidas &amp; Coctelería</a>
+            <a href="#ubicanos">Horarios y Locales</a>
+          </div>
+        </nav>
+
+        <!-- Horarios -->
+        <div class="footer__col">
+          <h4 class="footer__title t-title-menu">Horarios de Atención</h4>
+          <div class="footer__stack t-body-md">
+            <p><span class="footer__strong">Martes a Jueves:</span><br>12:30 PM - 11:00 PM</p>
+            <p><span class="footer__strong">Viernes y Sábados:</span><br>12:30 PM - 01:00 AM</p>
+            <p><span class="footer__strong">Domingos:</span><br>12:00 PM - 10:00 PM</p>
+          </div>
+        </div>
+
+        <!-- Contacto -->
+        <div class="footer__col">
+          <h4 class="footer__title t-title-menu">Contacto y Reservas</h4>
+          <div class="footer__stack t-body-md">
+            <div class="footer__contact footer__contact--top">
+              <span class="icon icon--lg c-gold" aria-hidden="true">location_on</span>
+              <span>Av. Las Brasas 450, Distrito Gastronómico</span>
+            </div>
+            <a class="footer__contact" href="tel:+51987654321">
+              <span class="icon icon--lg c-gold" aria-hidden="true">call</span>
+              <span>+51 987 654 321</span>
+            </a>
+            <a class="footer__contact" href="mailto:reservas@zamhusgrill.com">
+              <span class="icon icon--lg c-gold" aria-hidden="true">mail</span>
+              <span>reservas@zamhusgrill.com</span>
+            </a>
+          </div>
+          <div class="footer__social">
+            <a class="footer__social-link" href="#" aria-label="Compartir">
+              <span class="icon icon--lg" aria-hidden="true">share</span>
+            </a>
+            <a class="footer__social-link" href="#" aria-label="Instagram">
+              <span class="icon icon--lg" aria-hidden="true">photo_camera</span>
+            </a>
+            <a class="footer__social-link" href="https://wa.me/51987654321" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp">
+              <span class="icon icon--lg" aria-hidden="true">chat</span>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Barra inferior -->
+      <div class="footer__bottom t-caption">
+        <p>© <span id="year">2026</span> Zamhu's Grill. Todos los derechos reservados. Pasión por la brasa viva.</p>
+        <div class="footer__legal">
+          <a href="#">Términos &amp; Condiciones</a>
+          <a href="#">Libro de Reclamaciones</a>
+          <a href="#">Políticas de Privacidad</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>
